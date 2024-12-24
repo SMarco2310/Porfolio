@@ -106,7 +106,7 @@
 <hr>
             <section id="contactMe">
                 <h2>Contact Me</h2>
-                
+                <form action="">
                 <p>
                     <label for="">Name:</label>
                     <input id="" type="text" placeholder="John Doe">
@@ -120,8 +120,23 @@
                     <input id="phoneNumber"  type="number" placeholder="123456789">
                 </p>
                 <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea> 
+                    <small>Max 1000 characters</small> 
+                    <span id="charCount"></span> 
+                    <input type="hidden" id="charLimit" value="1000"> 
+                    <!-- <script>
+                        document.getElementById('charCount').textContent = document.getElementById('charLimit').value;
+                        document.getElementById('message').addEventListener('input', function() {
+                            document.getElementById('charCount').textContent = this.value.length;
+                        });
+                    </script> -->
+                </p>
+            </form>
+                <p>
                     <button type="submit" >Submit</button>
                 </p>
+
             </section>
         </main>
 <hr>

@@ -1,11 +1,76 @@
+
 body{
     background-color: rgba(250, 250, 250, 0.8);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 22px;
+    font-size: 1.2rem;
     line-height: 1.5;
     color : black;
 }
 
-form{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+/* Header Elements */
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+ 
+    flex-wrap: nowrap;
+}
+
+h1 {
+    margin-right: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+ul.links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+ul.links li {
+    padding: 0;
+}
+
+ul.links li a {
+    color: #333;
+    text-decoration: none; 
+    padding: 5px;
+}
+
+ul.links li a:hover {
+    font-size:larger;
+    color: #007BFF; /* Change color on hover */
+}
+
+
+/* Humburger menu */
+
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Width of the hamburger icon */
+    height: 20px; /* Adjusted height for proper spacing between lines */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.nav-button i {
+    display: block;
+    width: 100%; /* Make the lines span the width of the container */
+    height: 4px; /* Thickness of each line */
+    background-color: #333; /* Color of the lines */
+    border-radius: 2px; /* Rounded edges for a smoother look */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover or animation */
+}
+
+.nav-button:hover i {
+    background-color: #007BFF; /* Change color on hover */
 }

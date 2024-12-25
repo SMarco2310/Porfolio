@@ -8,7 +8,7 @@ body{
 }
 
 
-/* General Header Styling */
+/* Header Styling */
 header.header {
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@ header.header {
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Banner/Title Styling */
+/* Banner */
 header.header h1 {
     font-size: 1.5rem;
     color: #333;
@@ -74,3 +74,5 @@ header.header h1 {
 .nav-button:hover i {
     background-color: #007BFF;
 }
+
+/* Main */

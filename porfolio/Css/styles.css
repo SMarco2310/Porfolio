@@ -1,10 +1,19 @@
-
+*{
+    background-color: #f5f5f5;
+}
+html{
+    margin: 0;
+    padding:0;
+}
 body{
-    background-color: rgba(250, 250, 250, 0.8);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: f5f5f5;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size: 1.2rem;
     line-height: 1.5;
     color : black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -31,6 +40,7 @@ header.header h1 {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    min-width: 200px;
 }
 
 .navbar-fixed-top .links {
@@ -50,6 +60,7 @@ header.header h1 {
 
 .navbar-fixed-top .links li a:hover {
     color: #007BFF;
+    text-decoration: underline 3px solid ;
 }
 
 /* Hamburger Menu Styling */
@@ -73,6 +84,142 @@ header.header h1 {
 
 .nav-button:hover i {
     background-color: #007BFF;
+    
 }
 
 /* Main */
+
+
+main.main-content {
+    display:block;
+    
+}
+
+section{
+    border: #333 solid;
+}
+/* Welcome section */
+
+.welcome{
+    padding: 15%;
+    border-bottom: #333 solid;
+}
+/* About me section */
+.aboutMe {
+    display: flex;
+    flex-wrap: 200px auto;
+    border-bottom: #333 solid;
+    
+}
+
+.aboutMe .aboutMe-image,.aboutMe-text{
+    flex-basis: 1;
+    flex: 1;
+    padding:5%;
+}
+
+.aboutMe-image ,figure{
+    margin: 0px auto;
+    padding: 15px;
+
+
+}
+.aboutMe-text{
+    margin: 0;
+    text-align: justify;
+    padding: 15px 15px 15px 15px;
+}
+
+/* My project section */
+
+
+/*  */
+
+
+/* Contact Me form */
+
+section#contactMe form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.contactMe div.message,div.user-info{
+ flex-basis: 400px;
+    margin: 0;
+    padding: 15px;
+    flex: 1;
+}
+div.user-info{
+    width:fit-content;
+}
+
+
+
+div.message{
+    padding: 15px;
+}
+
+div.message textarea,div.user-info input{
+   width: 80%; 
+}
+
+
+
+/* Footer */
+
+/* has to work on this part again */
+
+footer{
+    /* background-color: #333; */
+    color: 100;
+    margin: 0;
+    padding: 0;
+    
+    /* color: #f5f5f5; */
+
+    border: #333 solid;
+
+}
+
+footer article.footer{
+    display: flex;
+    text-spacing-trim:auto;
+    flex-wrap: wrap;
+}
+
+footer article.footer h4{
+    margin-left: 25px;
+}
+
+
+footer article.footer section.more-info,section.social-media,section.download-info{
+    flex: auto;
+    flex-basis: 300px;
+    /* border-right: #f5f5f5 solid; */
+}
+
+footer article.footer ul li {
+    margin: 0;
+    padding: 0;
+}
+footer article.footer ul li.one {
+    list-style-image:url("Pictures/instagram-logo.png") ;
+}
+footer article.footer ul li.two {
+    list-style-image:url("Pictures/x-logo.png") ;
+}
+footer article.footer ul li.three {
+    list-style-image:url("Pictures/linkedin-logo.png") ;
+
+}
+
+p.copyright a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+    
+p.copyrigth a:hover {
+        color: #007BFF;
+}

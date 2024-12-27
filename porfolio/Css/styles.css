@@ -95,13 +95,14 @@ main.main-content {
     
 }
 
-section{
+section#home,form, section#aboutMe,section#project,section#experience, section#skills, section#education, section#contactMe, section.aboutMe-image, section.aboutMe-text, 
+section.more-info, section.social-media, section.download-info{
     border: #333 solid;
 }
 /* Welcome section */
 
 .welcome{
-    padding: 15%;
+    padding: 20%;
     border-bottom: #333 solid;
 }
 /* About me section */
@@ -132,10 +133,48 @@ section{
 
 /* My project section */
 
+section#projects{
+    padding: 100px,0,100px,0;
+}
 
-/*  */
+/* Skills section */
 
-
+.programming-languages {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+  }
+  
+  .programming-languages li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .programming-languages li::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Adjust size of the logo */
+    height: 20px; /* Adjust size of the logo */
+    margin-right: 10px; /* Space between the bullet and text */
+    background-size: cover;
+  }
+  
+  .programming-languages li:nth-child(1)::before {
+    background-image: url('Pictures/Python_programming_language-Logo.png');
+  }
+  
+  .programming-languages li:nth-child(2)::before {
+    background-image: url('Pictures/Java_programming_language-Logo.w.png');
+  }
+  
+  .programming-languages li:nth-child(3)::before {
+    background-image: url('Pictures/JavaScript-logo.png');
+  }
+  
+  .programming-languages li:nth-child(4)::before {
+    background-image: url('Pictures/8_3-front-end-development-1-128.png');
+  }
+  
 /* Contact Me form */
 
 section#contactMe form{
@@ -179,6 +218,18 @@ footer{
 
     border: #333 solid;
 
+}
+
+footer li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer li a:hover {
+    color: #007BFF;
+    text-decoration: underline 3px solid ;
 }
 
 footer article.footer{
